@@ -1,0 +1,50 @@
+# Rust / Cargo
+/target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# Debug builds
+debug/
+target/debug/
+
+# Release builds
+target/release/
+
+# Testing
+target/coverage/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+
+# Zed editor
+.zed/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Application specific
+# Autosave files - uncomment if you don't want to track them
+# *.bks
+# *.scr
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Log files
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp

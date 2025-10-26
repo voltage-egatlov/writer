@@ -1,0 +1,35 @@
+# FILE: Cargo.toml
+#
+# This is the package manifest for Cargo, Rust's package manager and build system.
+# It defines metadata about our project and lists all external dependencies (called "crates").
+#
+# NOTE: These versions are compatible with Rust 1.90.0 (September 2024)
+
+[package]
+# The name of our binary executable when compiled
+name = "writer_rust"
+# Semantic versioning: MAJOR.MINOR.PATCH
+version = "0.1.0"
+# Rust 2021 edition - determines which language features are available
+edition = "2021"
+
+[dependencies]
+# eframe: A framework for writing native GUI apps using egui
+# It handles window creation, input handling, and the render loop
+# Version 0.29 is the latest stable as of Rust 1.90.0
+eframe = "0.29"
+
+# egui: An immediate-mode GUI library for Rust
+# "Immediate mode" means UI is rebuilt every frame (60+ fps) rather than keeping a widget tree
+# Version 0.29 matches eframe for API compatibility
+egui = "0.29"
+
+# directories: Cross-platform library for finding standard user directories
+# (AppData on Windows, ~/.config on Linux, ~/Library/Application Support on macOS)
+# Version 5.0 is the latest stable
+directories = "5.0"
+
+# anyhow: Error handling library that provides a flexible Error type
+# Makes it easy to propagate errors with context using the ? operator
+# Version 1.0 is the stable API
+anyhow = "1.0"
